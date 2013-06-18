@@ -1,0 +1,9 @@
+[% INCLUDE tmpl/header.tt %]
+
+buy_confirmt<br>
+[% INCLUDE tmpl/wallet.tt %]
+
+
+name :[% items.name %]<br>
+price:[% items.price %]<br>
+<a href="/item/buy_execute/[% items.id %]">exec</a><br>

@@ -1,0 +1,7 @@
+[% INCLUDE tmpl/header.tt %]
+
+
+<p>nick name :[% members.nick_name %]</p>
+<p>mail address :[% members.mail_address %]</p>
+
+

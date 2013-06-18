@@ -1,0 +1,6 @@
+[% INCLUDE tmpl/header.tt %]
+
+amount       : [% members.amount %] 
+bank_amount  : [% members.bank_amount %]
+
+<a href="/self/move_money"> move money</a>

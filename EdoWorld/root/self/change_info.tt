@@ -1,0 +1,9 @@
+[% INCLUDE tmpl/header.tt %]
+
+<form method="post" action="/self/change_info_execute">
+
+<p>nick name<input type="text" name="nick_name" value="[% members.nick_name %]"></p>
+<p>mail address<input type="text" name="mail_address" value="[% members.mail_address %]"></p>
+<p><input type="submit" value="regist"></p>
+
+</form>

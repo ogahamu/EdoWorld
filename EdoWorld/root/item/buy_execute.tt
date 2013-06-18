@@ -1,0 +1,6 @@
+[% INCLUDE tmpl/header.tt %]
+
+buy_execute<br>
+
+name :[% items.name %]<br>
+price:[% items.price %]<br>

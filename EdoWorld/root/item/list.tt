@@ -1,0 +1,9 @@
+
+[% INCLUDE tmpl/header.tt %]
+this is itemlist-page<br>
+
+<br>
+===========================<br>
+[%FOREACH item=items%]
+  name:[% item.name %] price[% item.price %] <a href="/item/buy_confirm/[% item.id %]">buy</a><br>
+[%END%]

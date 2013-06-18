@@ -1,0 +1,5 @@
+
+[% INCLUDE tmpl/header.tt %]
+[% FOREACH value=list %]
+  name:[% value.name %] price[% value.price %] <a href="/construction/buy_confirm/[% value.id %]">buy</a><br>
+[%END%]

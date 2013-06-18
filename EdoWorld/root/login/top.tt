@@ -1,0 +1,11 @@
+
+[% INCLUDE tmpl/header.tt %]
+
+aaaaaaa
+<form method="POST" action="/login/execute">
+<div>mail address<input type="text" name="mail_address"></div>
+<div>pass word<input type="text" name="pass_word"></div>
+<input type="submit" value="send">
+<input type="reset" value="cancel">
+</form>
+<a href="/login/confirm/1">test</a>

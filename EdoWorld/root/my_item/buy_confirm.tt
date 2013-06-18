@@ -1,0 +1,8 @@
+
+[% INCLUDE tmpl/header.tt %]
+
+buy_confirmt<br>
+
+name:[% item_data.name %]<br>
+
+<a href="/item/buy_execute/[% item_data.id %]">exec</a><br>

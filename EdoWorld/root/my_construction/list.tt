@@ -1,0 +1,55 @@
+[% INCLUDE tmpl/header.tt %]
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+
+list_page<br>
+===========================<br>
+[% FOREACH map_position = map_positions %]
+  name:[% map_position.item_name %] 
+
+	<form method="post" action="/my_construction/build">
+
+    <select name="position_x">
+         <option> </option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+                <option value="G">G</option>
+                <option value="H">H</option>
+                <option value="I">I</option>
+                <option value="J">J</option>
+                <option value="K">K</option>
+                <option value="L">L</option>
+                <option value="M">M</option>
+                <option value="N">N</option>
+                <option value="O">O</option>
+                <option value="P">P</option>
+                <option value="Q">Q</option>
+                <option value="R">R</option>
+                <option value="S">S</option>
+    </select>
+    <select name="position_y">
+        <option></option>
+                <option value="1"> 1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+    </select>
+
+		</select>
+		<input type="hidden" id="req1" name="req1" value="xxxxxxxxxxxxx">
+        <input type="hidden" id="req2" name="req2" value="yyyyyyyyyyy">
+        <input type="hidden" id="my_construction_id" name="map_position_id" value="[% map_position.id %]">
+		<button type='submit'>build</button>
+	</form>
+	<br>
+
+[%END%]
+

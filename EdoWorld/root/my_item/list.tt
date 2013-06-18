@@ -1,0 +1,10 @@
+
+[% INCLUDE tmpl/header.tt %]
+
+this is itemlist-page<br>
+
+<br>
+===========================<br>
+[%FOREACH my_item=my_items%]
+  name:[% my_item.name %]  <a href="/my_item/use_confirmt/[% my_item.id %]">use</a><br>
+[%END%]

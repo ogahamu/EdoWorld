@@ -1,0 +1,8 @@
+
+[% INCLUDE tmpl/header.tt %]
+construction buy_confirm.tt<br>
+[% constructions.name %]<br>
+[% constructions.comment %]<br>
+[% constructions.price %]<br>
+
+<a href="/construction/buy_execute">execute</a>

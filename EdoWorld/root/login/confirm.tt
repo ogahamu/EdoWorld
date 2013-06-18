@@ -1,0 +1,5 @@
+
+[% INCLUDE tmpl/header.tt %]
+confirm
+[% member_id %]
+hoge
